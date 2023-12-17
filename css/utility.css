@@ -1,0 +1,27 @@
+.bg-nsu {
+  background-color: #1b1852;
+}
+
+.bg-nsu-secondary {
+  background-color: #0283bc;
+}
+
+.bg-nsu-tertiary {
+  background-color: #ee6f1a;
+}
+
+.text-nsu {
+  color: #1b1852;
+}
+
+.text-nsu-secondary {
+  color: #0283bc;
+}
+
+.text-nsu-tertiary {
+  color: #ee6f1a;
+}
+
+.text-justify {
+  text-align: justify;
+}

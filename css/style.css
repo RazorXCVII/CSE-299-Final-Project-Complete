@@ -1,0 +1,275 @@
+/* body {
+  background-image: url('../img/bg/bg1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+} */
+
+.navbar {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.nav-list li:nth-child(1) {
+  border-right: 1px solid #0283bc;
+}
+
+.nav-list li:nth-child(2) {
+  border-right: 1px solid #0283bc;
+}
+
+.nav-list li:nth-child(3) {
+  border-right: 1px solid #0283bc;
+}
+
+.nav-index {
+  text-decoration: none;
+  padding: 7px;
+}
+
+.nav-index:hover {
+  border-radius: 10px;
+  /* border: 1px #0283BC solid; */
+  box-shadow: 2px 1px #0283bc;
+}
+
+#signInButton {
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid #ee6f1a;
+  margin-right: 5px;
+  color: #ee6f1a;
+  background-color: transparent;
+}
+
+#signInButton:hover {
+  color: white;
+  background-color: #ee6f1a;
+}
+
+#signOutButton {
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid #0283bc;
+  margin-right: 5px;
+  color: #0283bc;
+  background-color: transparent;
+}
+
+#signOutButton:hover {
+  color: white;
+  background-color: #0283bc;
+}
+
+.address {
+  border: 1px solid #1b1852;
+}
+
+.tab-button {
+  text-decoration: none;
+  color: white;
+  background-color: #ee6f1a;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.tab-button:hover {
+  box-shadow: 2px 2px #4f42b4;
+}
+
+.tab-button-secondary {
+  text-decoration: none;
+  color: white;
+  background-color: #0283bc;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.tab-button-secondary:hover {
+  box-shadow: 2px 2px #4f42b4;
+}
+
+.trial {
+  background-color: #0283bc;
+  border-radius: 15px;
+  padding: 5px;
+  width: 100%;
+}
+
+.trial:hover {
+  background-color: #ee6f1a;
+  box-shadow: 2px 2px #4f42b4;
+}
+
+.logo-box {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.logo {
+  color: white;
+  object-fit: contain;
+  object-position: center;
+}
+
+.image {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.sell-items {
+  margin: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  place-items: center;
+  list-style: none;
+}
+.sell-items .item {
+  box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 15%);
+}
+
+.sell-items .item:hover {
+  border-radius: 0;
+  border: 2px black solid;
+  cursor: pointer;
+  transform: scale(1.8);
+  transition: 1s;
+}
+
+.lost-items {
+  margin: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  place-items: center;
+  list-style: none;
+}
+.lost-items .item {
+  box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 15%);
+}
+
+.lost-items .item:hover {
+  border-radius: 0;
+  border: 2px black solid;
+  cursor: pointer;
+  transform: scale(1.8);
+  transition: 1s;
+}
+
+.item {
+  width: 400px;
+  height: 600px;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.105);
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 5rem;
+}
+
+.card:hover {
+  box-shadow: 3px 3px #4f42b4;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card-icon {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.btn:hover {
+  background-color: #1b1852;
+  color: white;
+  box-shadow: 1px 1px #5143be;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.btn-link {
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn-clear {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-clear:hover {
+  background-color: #f1f1f1;
+}
+
+.body-height {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-Button:hover {
+  background-color: #1b1852;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .nav-list li:nth-child(1) {
+    border-right: none;
+  }
+
+  .nav-list li:nth-child(2) {
+    border-right: none;
+  }
+
+  .nav-list li:nth-child(3) {
+    border-right: none;
+  }
+
+  .nav-item {
+    margin: 10px;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+  p {
+    font-size: 15px;
+  }
+  li {
+    font-size: 15px;
+  }
+}

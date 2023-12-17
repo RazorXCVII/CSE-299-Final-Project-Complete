@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+
+    <title>NSU Utility Website</title>
+  </head>
+  <body class="body-height">
+    <!-- Navbar -->
+    <nav id="head-nav" class="navbar navbar-expand-lg bg-nsu py-2 fixed-top">
+      <div class="container justify-content-between">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div>
+          <a href="#" class="navbar-brand text-light">NSU</a>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+          <ul class="navbar-nav nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-index text-light">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="buysell.html" class="nav-index text-light">Buy & Sell</a>
+            </li>
+            <li class="nav-item">
+              <a href="lostfound.html" class="nav-index text-light"
+                >Lost & Found</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-index text-light">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <button id="signInButton">Sign In</button>
+            </li>
+            <li class="nav-item">
+              <button id="signOutButton">Sign Out</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro -->
+    <section class="p-5 p-lg-0 p-lg-5 text-center text-light bg-nsu-secondary">
+      <div class="container">
+        <div
+          class="d-sm-flex flex-column align-items-center justify-content-between"
+        >
+          <div>
+            <h1 class="mt-5">Buy & Sell</h1>
+            <p class="lead my-4">
+              Here you can find items to buy from other students, or post items
+              to sell yourself!
+            </p>
+            <button
+              class="btn post-Button bg-nsu-tertiary hidden"
+              id="post-Button"
+            >
+              Create Post
+            </button>
+
+            <!-- Post Form -->
+            <div id="post-Form" class="hidden">
+              <form class="row g-3 mt-4">
+                <div class="mb-3 mt-3">
+                  <label for="productImage" class="form-label"
+                    >Upload Image</label
+                  >
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="productImage"
+                    name="Image"
+                    accept="image/*"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="inputName" />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPhone" class="form-label"
+                    >Mobile Number</label
+                  >
+                  <input type="tel" class="form-control" id="inputPhone" />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputItem" class="form-label">Item Name</label>
+                  <input type="text" class="form-control" id="inputItem" />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPrice" class="form-label"
+                    >Item Price(in Taka)</label
+                  >
+                  <input type="number" class="form-control" id="inputPrice" />
+                </div>
+
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn post-Button bg-nsu-tertiary"
+                    id="postSubmit"
+                  >
+                    Post Item
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5 p-lg-0 p-lg-5 text-center bg-light">
+      <!-- Blog -->
+      <div class="parent-div container d-flex flex-wrap">
+        <div class="card mt-5 card-grid">
+          <img
+            src="https://www.bootdey.com/image/480x480/1B1852/FFFFFF"
+            class="card-img-top image-size"
+            alt="..."
+          />
+          <div class="card-body">
+            <h3 class="card-title">Item Name</h3>
+            <p class="card-text text-right">
+              <strong>Name:</strong> User Name <br />
+              <strong>Mobile:</strong> 0000000 <br />
+            </p>
+            <h5 class="text-right"><strong>Location/Price:</strong> XXXX</h5>
+            <br />
+            <i class="fas fa-calendar-alt"></i> Date
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-2 bg-nsu-tertiary text-light text-center">
+      <div class="container">
+        <p class="lead">
+          Copyright &copy; Nizam Uddin Khan Ridoy | ID: 1822019042 | Group: Maze
+          Overflow, 2023 All Rights Reserved
+        </p>
+
+        <a
+          href="#"
+          class="to-top d-none d-sm-block position-fixed py-2 px-3 bottom-0 end-0"
+        >
+          <i class="bi bi-arrow-up-circle h1 text-dark"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script/script.js"></script>
+    <script type="module" src="./script/auth.js"></script>
+    <script type="module" src="./script/post.js"></script>
+    <script type="module" src="./script/getShopPost.js"></script>
+  </body>
+</html>

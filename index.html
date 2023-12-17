@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+
+    <title>NSU Utility Website</title>
+  </head>
+  <body class="body-height">
+    <!-- Navbar -->
+    <nav id="head-nav" class="navbar navbar-expand-lg bg-nsu py-2 fixed-top">
+      <div class="container justify-content-between">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <i class="bi bi-menu-up text-nsu-tertiary"></i>
+        </button>
+
+        <div>
+          <a href="#" class="navbar-brand text-light">NSU</a>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+          <ul class="navbar-nav nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-index text-light">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="buysell.html" class="nav-index text-light">Buy & Sell</a>
+            </li>
+            <li class="nav-item">
+              <a href="lostfound.html" class="nav-index text-light"
+                >Lost & Found</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-index text-light">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <button id="signInButton">Sign In</button>
+            </li>
+            <li class="nav-item">
+              <button id="signOutButton">Sign Out</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro -->
+    <section class="mt-5 p-5 p-lg-0 p-lg-5 text-center bg-light">
+      <div class="container">
+        <div
+          class="d-sm-flex flex-column align-items-center justify-content-between"
+        >
+          <div>
+            <h1>Find all your needs in one place!</h1>
+            <p class="lead my-4">
+              Are you a student of NSU? Have you ever wanted to sell an old
+              Course Book or try to find an item you have lost, but have been
+              struggling to find a place to post about these? Fret not, our
+              website is a One-Stop solution to all those problems. Here you can
+              post any items you want to sell, lost items you have found, and
+              also posts blogs about any opinions you might have.
+            </p>
+      </div>
+    </section>
+
+    <!-- Buy & Sell -->
+    <section class="p-5 p-lg-0 p-lg-5 text-center bg-nsu-secondary text-light">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-lg-row align-items-center justify-content-between"
+        >
+          <div class="mb-3">
+            <img class="image d-sm-block" src="../img/icons/book.svg" alt="" />
+          </div>
+          <div class="mx-5">
+            <h1>Buy and Sell Old stuff</h1>
+            <p class="lead my-4">
+              Looking for a place to sell your old course materials that you
+              don't need anymore? This is your place! Here you can sign up using
+              your NSU email, and then post any items you would like to sell.
+              Are you just here to just look for items to buy? Then it's even
+              easier. You don't need to open an account to look through all the
+              items listed for sale. <br class="mb-2" />
+              <strong class="text-nsu"> Click the button </strong>below to get
+              to the Buy and Sell tab:
+            </p>
+            <a href="buysell.html" class="tab-button">Buy & Sell</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lost & Found -->
+    <section class="p-5 p-lg-0 p-lg-5 text-center bg-light text-nsu">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-lg-row align-items-center justify-content-between"
+        >
+          <div class="mx-5">
+            <h1>Look for Lost items</h1>
+            <p class="lead my-4">
+              Have you lost or found an item at the NSU campus? And want to look
+              somewhere or post somewhere before handing it over to the
+              authorities? Then is the right place for you. Here you can post
+              about any object or item you have found within the vicinity of NSU
+              campus. And if you have lost an item and want to check if anyone
+              has posted about it, you can do it without even creating an
+              account. <br class="mb-2" />
+              <strong class="text-nsu-tertiary"> Click the button </strong>below
+              to get to check the Lost and Found section:
+            </p>
+            <a href="lostfound.html" class="tab-button-secondary"
+              >Lost & Found</a
+            >
+          </div>
+          <div class="mb-3">
+            <img class="image d-sm-block" src="../img/icons/lost.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="p-5 p-lg-0 p-lg-5 text-center bg-nsu text-light">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-lg-row align-items-center justify-content-between"
+        >
+          <div class="mb-3">
+            <img class="image d-sm-block" src="../img/icons/blog.jpg" alt="" />
+          </div>
+          <div class="mx-5">
+            <h1>Post your Blogs</h1>
+            <p class="lead my-4">
+              Looking for safe place to post about anything related to NSU? It
+              could be a constructive review, an opinion, or just an article.
+              Here you can post blogs completely anonymously should you want. To
+              post blogs however, you must create an account.
+              <br class="mb-2" />
+              <strong class="text-nsu-tertiary"> Click the button </strong>below
+              to go to the Blog section:
+            </p>
+            <a href="blog.html" class="tab-button">Post Blog</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-2 bg-nsu-tertiary text-light text-center">
+      <div class="container">
+        <p class="lead">
+          Copyright &copy; Nizam Uddin Khan Ridoy | ID: 1822019042 | Group: Maze
+          Overflow, 2023 All Rights Reserved
+        </p>
+
+        <a
+          href="#"
+          class="to-top d-none d-sm-block position-fixed py-2 px-3 bottom-0 end-0"
+        >
+          <i class="bi bi-arrow-up-circle h1 text-dark"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/script.js"></script>
+    <script type="module" src="./script/auth.js"></script>
+  </body>
+</html>
